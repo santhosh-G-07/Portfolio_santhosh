@@ -45,7 +45,7 @@ const ExperienceSection = () => {
       description: [
         "Software & App Development, Web Development, ML Model Creation",
         "Career Branding: ATS-optimized resumes, LinkedIn optimization, portfolio design",
-        "50+ successful client projects delivered",
+        "100+ successful client projects delivered",
         "Logo & Portfolio Design for individuals and businesses",
       ],
       gradient: "from-green-500 to-emerald-500",
@@ -134,7 +134,6 @@ const ExperienceSection = () => {
       location: "Coimbatore, Tamil Nadu",
       period: "Nov 2021 – Jul 2025",
       description: [
-        "CGPA: 8.4/10",
         "Specialized in Machine Learning, Deep Learning, and Data Analytics",
         "Active participation in technical events and hackathons",
       ],
@@ -183,9 +182,8 @@ const ExperienceSection = () => {
         >
           {[
             { value: "8+", label: "Internships" },
-            { value: "50+", label: "Projects" },
+            { value: "100+", label: "Projects" },
             { value: "3+", label: "Years Learning" },
-            { value: "8.4", label: "CGPA" },
           ].map((stat, index) => (
             <div key={stat.label} className="text-center">
               <motion.span
