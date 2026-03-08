@@ -134,7 +134,6 @@ const ExperienceSection = () => {
       location: "Coimbatore, Tamil Nadu",
       period: "Nov 2021 – Jul 2025",
       description: [
-        "CGPA: 8.4/10",
         "Specialized in Machine Learning, Deep Learning, and Data Analytics",
         "Active participation in technical events and hackathons",
       ],
