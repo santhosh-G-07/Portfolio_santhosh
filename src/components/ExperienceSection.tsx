@@ -182,9 +182,8 @@ const ExperienceSection = () => {
         >
           {[
             { value: "8+", label: "Internships" },
-            { value: "50+", label: "Projects" },
+            { value: "100+", label: "Projects" },
             { value: "3+", label: "Years Learning" },
-            { value: "8.4", label: "CGPA" },
           ].map((stat, index) => (
             <div key={stat.label} className="text-center">
               <motion.span
