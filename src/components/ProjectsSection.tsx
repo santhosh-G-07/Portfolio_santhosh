@@ -1,9 +1,18 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { 
-  ExternalLink, Github, Brain, Eye, Mic, BarChart3, 
-  FileText, ShoppingCart, Heart, Database, Sparkles
+import {
+  ExternalLink,
+  Github,
+  Brain,
+  Eye,
+  Mic,
+  BarChart3,
+  FileText,
+  ShoppingCart,
+  Heart,
+  Database,
+  Sparkles,
+  Cpu,
 } from "lucide-react";
 
 const ProjectsSection = () => {
@@ -13,7 +22,8 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Medico: AI-Powered EHR",
-      description: "An intelligent Electronic Health Record system using AI for smart diagnostics and patient management. Features Zephyr-7B LLM for medical insights, real-time patient tracking, and predictive health analytics.",
+      description:
+        "An intelligent Electronic Health Record system using AI for smart diagnostics and patient management. Features Zephyr-7B LLM for medical insights, real-time patient tracking, and predictive health analytics.",
       tags: ["Python", "TensorFlow", "Django", "Zephyr-7B", "SQLite3", "Node.js"],
       icon: Brain,
       color: "from-cyan-500 to-blue-500",
@@ -22,7 +32,8 @@ const ProjectsSection = () => {
     },
     {
       title: "Healthcare Analytics Dashboard",
-      description: "Comprehensive Power BI dashboard for healthcare data visualization, patient analytics, and hospital performance metrics with interactive reporting.",
+      description:
+        "Comprehensive Power BI dashboard for healthcare data visualization, patient analytics, and hospital performance metrics with interactive reporting.",
       tags: ["Power BI", "SQL", "Python", "Tableau", "Data Visualization"],
       icon: Heart,
       color: "from-red-500 to-pink-500",
@@ -31,7 +42,8 @@ const ProjectsSection = () => {
     },
     {
       title: "Face Recognition Attendance",
-      description: "Automated attendance system using facial recognition technology. Implements real-time face detection and recognition using OpenCV, TensorFlow, and deep learning models.",
+      description:
+        "Automated attendance system using facial recognition technology. Implements real-time face detection and recognition using OpenCV, TensorFlow, and deep learning models.",
       tags: ["Python", "OpenCV", "TensorFlow", "Django", "Deep Learning", "React.js"],
       icon: Eye,
       color: "from-purple-500 to-violet-500",
@@ -39,8 +51,45 @@ const ProjectsSection = () => {
       featured: true,
     },
     {
+      title: "AI-Based Fault Detection System",
+      description:
+        "Built an intelligent fault detection system that analyzes operational patterns to identify anomalies, classify faults, and support predictive maintenance in industrial workflows.",
+      tags: ["Python", "Machine Learning", "Deep Learning", "Anomaly Detection", "Predictive Maintenance"],
+      icon: Cpu,
+      color: "from-sky-500 to-indigo-500",
+      github: "https://github.com/santhosh-G-07",
+    },
+    {
+      title: "Indian Sign Language to Speech with Alert System",
+      description:
+        "Developed a real-time assistive communication solution that converts Indian Sign Language gestures into speech while also detecting emotions and triggering alerts for critical situations.",
+      tags: ["Python", "Computer Vision", "Hand Gestures", "Emotion Detection", "Text-to-Speech"],
+      icon: Mic,
+      color: "from-emerald-500 to-teal-500",
+      github: "https://github.com/santhosh-G-07",
+    },
+    {
+      title: "AI-Powered Email Phishing Detector with Mobile Gmail Integration",
+      description:
+        "Designed a phishing detection system that analyzes suspicious email content, flags malicious patterns, and integrates with mobile Gmail workflows for safer inbox management.",
+      tags: ["Python", "NLP", "Cybersecurity", "Gmail API", "Mobile Integration"],
+      icon: FileText,
+      color: "from-rose-500 to-orange-500",
+      github: "https://github.com/santhosh-G-07",
+    },
+    {
+      title: "LiDAR Classification for Ground, Vegetation, and Buildings",
+      description:
+        "Implemented LiDAR point cloud classification using machine learning, deep learning, and algorithmic feature extraction to separate ground, vegetation, and building classes accurately.",
+      tags: ["LiDAR", "Deep Learning", "Machine Learning", "Point Cloud", "Remote Sensing"],
+      icon: Database,
+      color: "from-lime-500 to-green-600",
+      github: "https://github.com/santhosh-G-07",
+    },
+    {
       title: "E-Commerce Analytics Tool",
-      description: "Advanced analytics platform for e-commerce data with sentiment analysis, customer behavior tracking, and sales prediction using NLP and machine learning.",
+      description:
+        "Advanced analytics platform for e-commerce data with sentiment analysis, customer behavior tracking, and sales prediction using NLP and machine learning.",
       tags: ["Python", "SpaCy", "Scikit-learn", "Django", "NLP"],
       icon: ShoppingCart,
       color: "from-orange-500 to-amber-500",
@@ -48,7 +97,8 @@ const ProjectsSection = () => {
     },
     {
       title: "Cancer Disease Prediction",
-      description: "Machine learning model for early cancer detection using medical data analysis. Implements multiple ML algorithms for accurate disease prediction with 90%+ accuracy.",
+      description:
+        "Machine learning model for early cancer detection using medical data analysis. Implements multiple ML algorithms for accurate disease prediction with 90%+ accuracy.",
       tags: ["Python", "TensorFlow", "Scikit-learn", "Django", "Neural Networks"],
       icon: Sparkles,
       color: "from-teal-500 to-cyan-500",
@@ -56,7 +106,8 @@ const ProjectsSection = () => {
     },
     {
       title: "Product Recommendation Engine",
-      description: "E-commerce recommendation system using collaborative filtering and cosine similarity for personalized product suggestions and improved user experience.",
+      description:
+        "E-commerce recommendation system using collaborative filtering and cosine similarity for personalized product suggestions and improved user experience.",
       tags: ["Python", "Pandas", "Cosine Similarity", "Django", "ML"],
       icon: Database,
       color: "from-indigo-500 to-blue-500",
@@ -64,7 +115,8 @@ const ProjectsSection = () => {
     },
     {
       title: "Virtual Assistant ML",
-      description: "AI-driven virtual assistant that helps users with tasks through voice or text interaction, utilizing NLP and speech recognition for natural conversations.",
+      description:
+        "AI-driven virtual assistant that helps users with tasks through voice or text interaction, utilizing NLP and speech recognition for natural conversations.",
       tags: ["Python", "NLP", "Speech Recognition", "Machine Learning"],
       icon: Mic,
       color: "from-green-500 to-emerald-500",
@@ -72,7 +124,8 @@ const ProjectsSection = () => {
     },
     {
       title: "Text To Speech Recognition",
-      description: "Text-to-speech application powered by Microsoft Azure Cognitive Services for natural voice synthesis and real-time speech recognition.",
+      description:
+        "Text-to-speech application powered by Microsoft Azure Cognitive Services for natural voice synthesis and real-time speech recognition.",
       tags: ["Python", "Azure", "Speech SDK", "Cognitive Services"],
       icon: FileText,
       color: "from-blue-500 to-indigo-500",
@@ -80,7 +133,8 @@ const ProjectsSection = () => {
     },
     {
       title: "Academic Flow Dashboard",
-      description: "Comprehensive data visualization dashboard for managing and analyzing academic workflows, student performance metrics, and institutional analytics.",
+      description:
+        "Comprehensive data visualization dashboard for managing and analyzing academic workflows, student performance metrics, and institutional analytics.",
       tags: ["Excel", "Tableau", "Power BI", "Data Visualization"],
       icon: BarChart3,
       color: "from-yellow-500 to-orange-500",
@@ -88,13 +142,12 @@ const ProjectsSection = () => {
     },
   ];
 
-  const featuredProjects = projects.filter(p => p.featured);
-  const otherProjects = projects.filter(p => !p.featured);
+  const featuredProjects = projects.filter((project) => project.featured);
+  const otherProjects = projects.filter((project) => !project.featured);
 
   return (
     <section id="projects" className="section-padding bg-card/30" ref={ref}>
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -107,11 +160,11 @@ const ProjectsSection = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            From AI-powered healthcare solutions to intelligent automation systems—here are some of my notable works.
+            From AI healthcare products to cybersecurity, assistive tech, and LiDAR intelligence,
+            here are some of the projects I have worked on.
           </p>
         </motion.div>
 
-        {/* Featured Projects - Large Cards */}
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {featuredProjects.map((project, index) => (
             <motion.div
@@ -122,21 +175,18 @@ const ProjectsSection = () => {
               whileHover={{ y: -10 }}
               className="group relative rounded-3xl overflow-hidden glass-card"
             >
-              {/* Gradient background on hover */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
-              
-              {/* Gradient top bar */}
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
+              />
               <div className={`h-1.5 bg-gradient-to-r ${project.color}`} />
 
               <div className="p-8">
-                {/* Featured badge */}
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-mono border border-primary/30">
-                    ⭐ Featured
+                    Featured
                   </span>
                 </div>
 
-                {/* Icon */}
                 <motion.div
                   whileHover={{ rotate: 10, scale: 1.1 }}
                   className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${project.color} flex items-center justify-center mb-5 shadow-lg`}
@@ -144,17 +194,14 @@ const ProjectsSection = () => {
                   <project.icon className="w-8 h-8 text-white" />
                 </motion.div>
 
-                {/* Title */}
                 <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
 
-                {/* Description */}
                 <p className="text-muted-foreground text-sm mb-5 line-clamp-4">
                   {project.description}
                 </p>
 
-                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.slice(0, 4).map((tag) => (
                     <span
@@ -171,7 +218,6 @@ const ProjectsSection = () => {
                   )}
                 </div>
 
-                {/* Links */}
                 <div className="flex gap-3">
                   <motion.a
                     href={project.github}
@@ -200,7 +246,6 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        {/* Other Projects - Compact Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {otherProjects.map((project, index) => (
             <motion.div
@@ -211,11 +256,9 @@ const ProjectsSection = () => {
               whileHover={{ y: -8 }}
               className="group relative rounded-2xl overflow-hidden glass-card"
             >
-              {/* Gradient top bar */}
               <div className={`h-1 bg-gradient-to-r ${project.color}`} />
 
               <div className="p-6">
-                {/* Icon */}
                 <motion.div
                   whileHover={{ rotate: 10, scale: 1.1 }}
                   className={`w-12 h-12 rounded-xl bg-gradient-to-br ${project.color} flex items-center justify-center mb-4`}
@@ -223,17 +266,14 @@ const ProjectsSection = () => {
                   <project.icon className="w-6 h-6 text-white" />
                 </motion.div>
 
-                {/* Title */}
                 <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
 
-                {/* Description */}
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
                   {project.description}
                 </p>
 
-                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.slice(0, 3).map((tag) => (
                     <span
@@ -245,7 +285,6 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                {/* Links */}
                 <div className="flex gap-2">
                   <motion.a
                     href={project.github}
@@ -270,13 +309,13 @@ const ProjectsSection = () => {
                 </div>
               </div>
 
-              {/* Hover glow effect */}
-              <div className={`absolute inset-0 bg-gradient-to-r ${project.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none`} />
+              <div
+                className={`absolute inset-0 bg-gradient-to-r ${project.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none`}
+              />
             </motion.div>
           ))}
         </div>
 
-        {/* View More Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

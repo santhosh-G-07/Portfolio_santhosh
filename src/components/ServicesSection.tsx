@@ -10,7 +10,7 @@ const ServicesSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const whatsappNumber = "919361431370";
+  const whatsappNumber = "919344397037";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi%20Santhosh,%20I'm%20interested%20in%20your%20services.`;
 
   const services = [

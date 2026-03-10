@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+# santhosh_portfolio
 
-## Project info
+Personal portfolio website created by Santhosh Goverthanan to showcase projects, skills, services, experience, and contact details in one place.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## About
 
-## How can I edit this code?
+This portfolio highlights my work in:
 
-There are several ways of editing your application.
+- AI and Machine Learning
+- GenAI and RAG-based solutions
+- Full-stack web development
+- Data analytics and visualization
+- UI-focused portfolio and product presentation
 
-**Use Lovable**
+## Profile
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- Name: Santhosh Goverthanan
+- Roles: AI/ML Engineer, Software Developer, Data Analyst, Full Stack Developer
+- Current Location: Bangalore, Karnataka, India
+- Native: Tiruvannamalai, Tamil Nadu, India
+- Email: santhoshgoverthanan@gmail.com
+- Phone: +91 9344397037
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
 
-**Use your preferred IDE**
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+- Lucide React
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Responsive personal portfolio design
+- Project showcase with featured work
+- Skills and tools overview
+- Experience and education timeline
+- Services section
+- Contact form and social links
 
-Follow these steps:
+## Run Locally
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Production Build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+npm run build
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- `src/components` for portfolio sections and UI components
+- `src/pages` for page-level routes
+- `src/assets` for images and branding assets
+- `public` for static public files
 
-## What technologies are used for this project?
+## Purpose
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This repository is used as my personal showcase site and as a central place to present my technical background, project experience, and services.

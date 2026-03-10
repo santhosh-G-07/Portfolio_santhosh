@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
-import profileImage from "@/assets/santhosh-profile.jpg";
-
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 const HeroSection = () => {
   const roles = ["AI/ML Engineer", "Software Developer", "Data Analyst", "Full Stack Developer"];
 
@@ -10,10 +8,6 @@ const HeroSection = () => {
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
-          autoPlay
-          muted
-          loop
-          playsInline
           className="w-full h-full object-cover"
         >
           <source
@@ -180,15 +174,6 @@ const HeroSection = () => {
               >
                 Get In Touch
               </motion.a>
-              <motion.a
-                href="https://drive.google.com/uc?export=download&id=YOUR_RESUME_ID"
-                className="px-6 py-4 rounded-full border border-accent text-accent font-semibold hover:bg-accent/10 transition-all duration-300 flex items-center gap-2"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Download size={18} />
-                Resume
-              </motion.a>
             </motion.div>
 
             {/* Social Links */}
@@ -219,48 +204,26 @@ const HeroSection = () => {
             </motion.div>
           </motion.div>
 
-          {/* Profile Image */}
+          {/* Profile Cutout Animation */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative flex justify-center"
           >
-            {/* Glowing ring */}
             <motion.div
-              className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-accent opacity-30 blur-3xl"
-              animate={{ scale: [1, 1.15, 1], opacity: [0.2, 0.4, 0.2] }}
+              className="absolute inset-x-10 inset-y-12 rounded-[3rem] bg-gradient-to-br from-primary/12 via-[#7FD0D8]/8 to-accent/10 blur-3xl"
+              animate={{ scale: [1, 1.06, 1], opacity: [0.12, 0.22, 0.12] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             />
-            
-            {/* Profile container */}
-            <div className="relative">
-              {/* Rotating border */}
-              <motion.div
-                className="absolute -inset-3 rounded-full bg-gradient-to-r from-primary via-accent to-primary"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                style={{ padding: "4px" }}
-              >
-                <div className="w-full h-full rounded-full bg-background" />
-              </motion.div>
-              
-              {/* Second rotating ring */}
-              <motion.div
-                className="absolute -inset-6 rounded-full border-2 border-dashed border-primary/30"
-                animate={{ rotate: -360 }}
-                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-              />
-              
-              {/* Image */}
-              <motion.img
-                src={profileImage}
-                alt="Santhosh Goverthanan"
-                className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-background shadow-2xl"
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              />
-            </div>
+
+            <motion.img
+              src="/santhosh_video_cutout.webp"
+              alt="Santhosh animated portrait"
+              className="relative w-[18rem] md:w-[20rem] lg:w-[24rem] h-auto object-contain drop-shadow-[0_35px_70px_rgba(0,0,0,0.58)]"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            />
 
             {/* Floating tech badges */}
             {[
@@ -312,3 +275,8 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+
+
+
+
