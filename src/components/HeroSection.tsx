@@ -105,7 +105,7 @@ const HeroSection = () => {
               className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4"
             >
               Hey, I'm{" "}
-              <span className="text-gradient glow-text">Santhosh</span>
+              <span className="text-gradient glow-text">Santhosh Goverthanan</span>
             </motion.h1>
 
             {/* Animated Role - Typewriter Effect */}
@@ -275,6 +275,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
